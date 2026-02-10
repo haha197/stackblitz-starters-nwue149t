@@ -50,12 +50,29 @@
       tr:nth-child(even) {
         background-color: #f3f3f3;
       }
+
+      a:hover {
+        border: 7px outset #000;
+        color: #000;
+        background: linear-gradient(90deg,#999999, #666666);
+      }
+      
+      a{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        background: linear-gradient(90deg,#666666, #333333);
+        border: 7px outset #999999;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <h1>Weekly Schedule</h1>
     <table id="displayTable"></table>
 
+    <a href="editor.html">Editor</a>
     <script>
       const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
       const periods = 10; // 10 Vertical slots
